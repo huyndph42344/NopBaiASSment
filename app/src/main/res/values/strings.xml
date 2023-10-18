@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DuAnMau</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="open">Open nav</string>
+    <string name="close">Close nav</string>
+    <color name="TrangThai">#4CAF50</color>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.fragment_doanh_thu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Từ ngày"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:backgroundTint="#8F5E5E"
+            android:id="@+id/dayStart"/>
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:id="@+id/txtdayStart"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Đến ngày"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:backgroundTint="#8F5E5E"
+            android:id="@+id/dayEnd"/>
+
+        <EditText
+            android:id="@+id/txtdayEnd"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Doanh thu"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:id="@+id/DoanhThu"
+        android:backgroundTint="#2196F3"/>
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:text="Doanh Thu"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:id="@+id/ed_doanhthu"/>
+
+</LinearLayout>

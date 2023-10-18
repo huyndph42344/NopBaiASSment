@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".fragment.">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/in_MaTT">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_txtMaTT"
+            android:hint="Tạo mã Thủ thư"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/in_HoTenTT">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_txtHoTenTT"
+            android:hint="Họ tên"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:passwordToggleEnabled="true"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/in_PassTT">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_txtPassTT"
+            android:inputType="textPassword"
+            android:hint="Mật Khẩu"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:text="Tạo"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:backgroundTint="#E91E63"
+            android:id="@+id/btn_CreateTT"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Hủy"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:backgroundTint="#8A55646A"
+            android:id="@+id/btn_CancelCreateTT"/>
+    </LinearLayout>
+</LinearLayout>
