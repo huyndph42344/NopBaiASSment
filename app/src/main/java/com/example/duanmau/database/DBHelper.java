@@ -8,21 +8,19 @@ public class DBHelper extends SQLiteOpenHelper {
 
 
     public DBHelper(Context context) {
-        super(context, "PNLib", null, 0);
+        super(context, "PNLib", null, 5);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String tb_thuthu = "Create table THUTHU(maTT text primary key," + "hoTen text,matKhau text,matKhau text)";
+        String tb_thuthu = "Create table THUTHU(maTT text primary key," + "hoTen text,matKhau text)";
         db.execSQL(tb_thuthu);
         String tb_thanhvien = "Create table THANHVIEN (maTV integer primary key autoincrement," + "hoTen text" + ",namSinh text)";
         db.execSQL(tb_thanhvien);
         String tb_loaisach = "Create table LOAISACH (maLoai integer primary key autoincrement," + "tenLoai text)";
         db.execSQL(tb_loaisach);
-        String tb_sach = "Create table SACH (maSach integer primary key autoincrement," + "tenSach text,\" +\n" +
-                "                \"tienThue integer,\" +\n" +
-                "                \"maLoai integer references LOAISACH(maLoai))";
-        db.execSQL(tb_sach);
+        String tb_sach = "Create table SACH (maSach integer primary key autoincrement," + "tenSach text,"  + "   tienThue integer,"  + "maLoai integer references LOAISACH(maLoai))";
+  db.execSQL(tb_sach);
         String tb_phieumuon = "Create table PHIEUMUON(maPM integer primary key autoincrement," +
                 "maTT references THUTHU(maTT)," +
                 "maTV integer references THANHVIEN(maTV)," +
