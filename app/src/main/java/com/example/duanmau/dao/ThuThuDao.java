@@ -18,7 +18,7 @@ public class ThuThuDao {
 
     public boolean chekcLogin(String user, String pass) {
         SQLiteDatabase database = dbHelper.getReadableDatabase();
-        Cursor cursor = database.rawQuery("SELECT * FROM THUTHU WHERE hoTen=? AND mayKhau =?", new String[]{user, pass});
+        Cursor cursor = database.rawQuery("SELECT * FROM THUTHU WHERE hoTen=? AND matKhau =?", new String[]{user, pass});
         if (cursor.getCount() > 0) {
             return true;
         } else {
